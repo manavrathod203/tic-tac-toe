@@ -4,7 +4,7 @@ function Board({ board, setBoard, size, handleClick, winner }) {
   return (
     <div
       style={{ gridTemplateColumns: `repeat(${size}, minmax(0, 1fr))` }}
-      className={`w-full grid gap-1 ${winner && "opacity-30"}`}
+      className={`w-full md:w-2/3 lg:w-1/3 grid gap-1 ${winner && "opacity-30"}`}
     >
       {board.map((row, rowNo) =>
         row.map((cell, colNo) => (
